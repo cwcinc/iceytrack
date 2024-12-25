@@ -11619,7 +11619,7 @@
             Rs(this, ws, "f").increment()),
             Rs(this, Ss, "f").increment()),
             i && !Rs(this, ys, "f") && Rs(this, xs, "f")) {
-                const t = 4e3;
+                const t = 4e4;    // important - engine power
                 Rs(this, us, "f").applyEngineForce(t, 2),
                 Rs(this, us, "f").applyEngineForce(t, 3)
             } else
@@ -11750,7 +11750,7 @@
                     i.set_m_suspensionStiffness(50),
                     i.set_m_wheelsDampingRelaxation(5),
                     i.set_m_wheelsDampingCompression(200),
-                    i.set_m_frictionSlip(1.5),
+                    i.set_m_frictionSlip(1.2),
                     i.set_m_rollInfluence(.75)
                 }
                 )),
